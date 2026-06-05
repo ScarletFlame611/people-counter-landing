@@ -27,9 +27,9 @@ const features = [
     className: "md:col-span-1",
   },
   {
-    title: "Self-hosted и MIT — навсегда ваше",
+    title: "Self-hosted — навсегда ваше",
     description:
-      "Один docker compose up — и сервис работает у вас. Никаких подписок, лимитов на камеры и отправки видео третьим лицам. Лицензия MIT.",
+      "Один docker compose up — и сервис работает у вас. Никаких подписок, лимитов на камеры и отправки видео третьим лицам.",
     className: "md:col-span-2",
   },
 ];
