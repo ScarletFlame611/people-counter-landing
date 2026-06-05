@@ -1,0 +1,8 @@
+node_modules
+dist
+*.local
+.DS_Store
+public/demo.source.mp4
+public/demo.compressed.mp4
+ffmpeg-*.log
+ffmpeg-version.txt

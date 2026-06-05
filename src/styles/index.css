@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --paper: #f6f4ee;
+    --ink: #111111;
+    --muted: #6b6b66;
+    --hairline: #e6e2d8;
+    --accent: #1f4d3a;
+    --accent-soft: #e7ede8;
+    --highlight: #ff5a36;
+    --highlight-soft: #ffe3d9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  ::selection {
+    background-color: var(--accent-soft);
+    color: var(--ink);
+  }
+}
+
+@layer components {
+  .grain-overlay {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    opacity: 0.04;
+    background-image: url("/noise.svg");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+  }
+
+  .hairline-b {
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .hairline-t {
+    border-top: 1px solid var(--hairline);
+  }
+
+  .hairline {
+    border: 1px solid var(--hairline);
+  }
+
+  .editorial-underline {
+    text-decoration: none;
+    background-image: linear-gradient(var(--highlight), var(--highlight));
+    background-size: 100% 0.18em;
+    background-position: 0 92%;
+    background-repeat: no-repeat;
+    padding-bottom: 2px;
+  }
+
+  .live-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.15rem 0.5rem 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: var(--highlight-soft);
+    color: var(--highlight);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .live-dot {
+    position: relative;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--highlight);
+  }
+
+  .live-dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: var(--highlight);
+    animation: ping-soft 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes ping-soft {
+    0% {
+      transform: scale(1);
+      opacity: 0.55;
+    }
+    80%,
+    100% {
+      transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+
+  .link-hover {
+    @apply transition-colors duration-200;
+  }
+
+  .link-hover:hover {
+    color: var(--accent);
+  }
+
+  .section-pad {
+    @apply px-5 md:px-8 lg:px-12;
+  }
+
+  .container-editorial {
+    @apply mx-auto max-w-editorial section-pad;
+  }
+}
