@@ -49,7 +49,7 @@ export function DemoVideo() {
           </span>
         </div>
         <video
-          src="/demo.mp4"
+          src={`${import.meta.env.BASE_URL}demo.mp4`}
           autoPlay
           loop
           muted
