@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github } from "lucide-react";
+import { Gitlab } from "lucide-react";
 import {
   DEMO_URL,
   FEATURES_URL,
@@ -41,8 +41,8 @@ export function Nav() {
           rel="noopener noreferrer"
           className="link-hover inline-flex items-center gap-1.5 text-sm text-ink"
         >
-          <Github className="h-4 w-4" strokeWidth={1.5} />
-          <span className="hidden sm:inline">GitHub</span>
+          <Gitlab className="h-4 w-4" strokeWidth={1.5} />
+          <span className="hidden sm:inline">GitLab</span>
         </a>
       </nav>
     </motion.header>

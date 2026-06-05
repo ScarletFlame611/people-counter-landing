@@ -79,7 +79,7 @@ export function Hero() {
               className="group inline-flex items-center gap-2 text-base font-medium text-ink"
             >
               <span className="border-b border-ink pb-0.5 transition-colors group-hover:border-accent group-hover:text-accent">
-                Исходники на GitHub
+                Исходники на GitLab
               </span>
               <ArrowRight
                 className="h-4 w-4 transition-transform group-hover:translate-x-0.5"

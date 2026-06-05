@@ -20,7 +20,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="link-hover text-ink"
           >
-            GitHub
+            GitLab
           </a>
         </nav>
       </div>
