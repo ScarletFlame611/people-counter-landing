@@ -17,7 +17,7 @@ export function DemoVideo() {
           </p>
           <h2 className="max-w-xl font-serif text-2xl font-medium tracking-tight text-ink md:text-3xl">
             Нарисовали линию — счётчик{" "}
-            <span className="editorial-underline italic">пошёл</span>.
+            <span className="editorial-underline italic">запустился</span>.
           </h2>
         </div>
         <span className="live-chip">

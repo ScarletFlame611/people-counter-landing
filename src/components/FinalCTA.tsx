@@ -42,8 +42,9 @@ export function FinalCTA() {
           <span className="text-highlight">одну команду</span>.
         </h2>
         <p className="mx-auto mt-5 max-w-lg text-base text-muted md:text-lg">
-          Клонируйте репозиторий, добавьте RTSP-адрес камеры в&nbsp;.env и поднимите
-          весь стек одной командой. Дальше — линия на экране и счётчик.
+          Склонируйте репозиторий и запустите сервис одной командой. Камеру
+          подключите прямо в&nbsp;браузере, проведите линию подсчёта — и счётчик
+          запустится.
         </p>
 
         <div className="mx-auto mt-8 flex max-w-2xl flex-col items-stretch gap-3 md:mt-10">
